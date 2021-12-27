@@ -62,7 +62,7 @@ export default class JPush {
    */
   static init(params: {
     appKey: string;
-    titchannelle: string;
+    channel: string;
     production: boolean;
   }): void;
 
@@ -288,7 +288,7 @@ export default class JPush {
   /**
    * 自定义消息事件
    */
-  static addCustomMessagegListener(
+  static addCustomMessageListener(
     callback: Callback<{
       /**
        * 唯一标识自定义消息的 ID
